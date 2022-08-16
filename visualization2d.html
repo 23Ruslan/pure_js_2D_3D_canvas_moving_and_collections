@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap');
+        * {
+            font-family: 'Edu SA Beginner', cursive;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        body {
+            animation: anime infinite 3s linear;
+        }
+        @keyframes anime {
+            0% {
+                background: #97fff3;
+            }
+            33% {
+                background: #a380f2;
+            }
+            67% {
+                background: #6371ed;
+            }
+            100% {
+                background: #97fff3;
+            }
+        }
+        canvas {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas2d" width="500" height="500"> your browser is not supported </canvas> <br><!-- if the browser does not support canvas, the user sees that message -->
+    <button id="b1" onclick="moveTo()">Move to</button> <br><br>
+    <button id="b2" onclick="moveWithAcceleration()">Move with acceleration</button> <br><br>
+    eng keyboard: W — ↑, A — ←, S — ↓, D — →<br>
+    * use keys to change end point<br>
+    <a href="visualization3d.html">GO 3D >></a>
+    <script src="move2d.js"></script>
+</body>
+</html>
